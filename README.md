@@ -4,7 +4,7 @@
 
 description...
 
-## beanazonCustomer.js Application Demonstration
+## Friend Finder app Demonstration
 
 1. a
 ![First Example](/images/readme1.png)
