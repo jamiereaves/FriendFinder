@@ -206,9 +206,9 @@
           <h1 class="modal-title" id="friendMatchModalTitle">Presenting your closest match: </h1>
         </div>
         <div class="modal-body">
-          <h2 id="friendMatchModalName"></h2>
+          <h2 id="friendMatchName"></h2>
             <br>
-          <img class="img-responsive" id="friendMatchModalImg" src = "" alt = "" style="max-height:200px">
+          <img class="img-responsive" id="friendMatchImg" src = "" alt = "" style="max-height:200px">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -422,6 +422,7 @@
         $("#friendMatchImg").attr("alt", data.name);
         //manually toggle the modal (via bootstrap documentation).
         $('#friendMatchModal').modal('toggle')
+        layout1();
         
     })
     });
