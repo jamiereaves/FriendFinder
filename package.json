@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "install": "^0.12.1",
+    "npm": "^6.1.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiereaves/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiereaves/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/jamiereaves/FriendFinder#readme",
+  "description": ""
+}

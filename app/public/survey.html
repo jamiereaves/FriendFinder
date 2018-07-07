@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!--links to bootstrap, jquery, and bootstrap.js -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="text-center"><strong>Friend Finder</strong></h>
+    <hr>
+    <div id="view1">
+        <h2 class="text-center"><strong>Basic Information </strong> (all fields required)</h2>
+            <form class="text-left" id="form1">
+                <div class="form-group">
+                <label for="nameInput">Name: </label>
+                <input type="text" class="form-control" id="name" placeholder="Jamie Reaves">
+                </div>
+
+                <div class="form-group">
+                    <label for="nameInput">Link to a Photo Image: </label>
+                    <input type="text" class="form-control" id="photo" placeholder="https://example.net/example.jpg">
+                </div>
+            </form>
+    </div>
+
+    <br>
+<!--Button to view profile and continue-->
+<button type="submit" class="btn btn-primary btn-lg btn-block" id="basicInfoButton">Continue</button>
+
+    <div class="text-left" id="view2" style="display: none">
+        <h2 class="text-center"><strong>Survey Questions </strong> (part 1 of 2)</h2>
+            <form id="form2"> 
+                <h4 class=><strong>Question 1</strong></h4>
+                <div class="form-group">
+                <label for="question1">PLACEHOLDER</label>
+                <select class="form-control text-center" id="q1">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 2</strong></h3>
+                <div class="form-group">
+                <label for="question2">PLACEHOLDER</label>
+                <select class="form-control" id="q2">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 3</strong></h3>
+                <div class="form-group">
+                <label for="question3">PLACEHOLDER</label>
+                <select class="form-control" id="q3">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 4</strong></h3>
+                <div class="form-group">
+                <label for="question4">PLACEHOLDER</label>
+                <select class="form-control" id="q4">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 5</strong></h3>
+                <div class="form-group">
+                <label for="question5">PLACEHOLDER</label>
+                <select class="form-control" id="q5">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+            </form>
+    </div>
+    
+        <br>
+<!--Button to continue survey-->
+<button type="submit" class="btn btn-primary btn-lg btn-block" id="surveyButton" style="display: none">Continue</button>
+
+    <div class="text-left" id="view3" style="display: none">
+        <h2 class="text-center"><strong>Survey Questions </strong> (part 2 of 2)</h2>
+            <form id="form3">
+                <h3><strong>Question 6</strong></h3>
+                <div class="form-group">
+                <label for="question6">PLACEHOLDER</label>
+                <select class="form-control" id="q6">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 7</strong></h3>
+                <div class="form-group">
+                <label for="question7">PLACEHOLDER</label>
+                <select class="form-control" id="q7">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 8</strong></h3>
+                <div class="form-group">
+                <label for="question8">PLACEHOLDER</label>
+                <select class="form-control" id="q8">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 9</strong></h3>
+                <div class="form-group">
+                <label for="question9">PLACEHOLDER</label>
+                <select class="form-control" id="q9">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+                <h3><strong>Question 10</strong></h3>
+                <div class="form-group">
+                <label for="question10">PLACEHOLDER</label>
+                <select class="form-control" id="q10">
+                    <option value="">Please Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                </div>
+                
+
+            </form>
+    </div>   
+    
+    <br>
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" style="display: none">Submit</button>
+
+    <hr>
+    <!--footer containing link to the API Friends List & the github repository for the app-->
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jamiereaves/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--modal to display the information of the closest match-->
+  <div class="modal fade" id="friendMatchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="friendMatchModalTitle">Presenting your closest match: </h1>
+        </div>
+        <div class="modal-body">
+          <h2 id="friendMatchModalName"></h2>
+            <br>
+          <img class="img-responsive" id="friendMatchModalImg" src = "" alt = "" style="max-height:200px">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal to display example of how the user will appear to other users-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleTitle">Here is how you will appear to other viewers: </h1>
+            </div>
+            <div class="modal-body">
+              <h2 id="exampleName"></h2>
+                <br>
+              <img class="img-responsive" id="exampleImg" src = "" alt = "" style="max-height:200px">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="editProfile" data-dismiss="modal">Edit Basic Information</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--modal to prompt user for name-->
+  <div class="modal fade" id="namePlease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+              <h2>Please enter your name to see your result!</h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!--modal to prompt user for photo link-->
+ <div class="modal fade" id="linkPlease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+              <h2>Please enter an image link to see your result!</h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--modal to prompt the user to answer all questions-->
+<div class="modal fade" id="questionPlease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+              <h2 id="questionPrompt"></h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    var allFieldsSubmitted = "";
+    //function that sets up initial display
+    var layout1 = function(){
+        $("#view2").css("display", "none");
+        $("#view3").css("display", "none");
+        $("#view1").css("display", "inherit");
+        $("#surveyButton").css("display", "none");
+        $("#submit").css("display", "none");
+        $("#basicInfoButton").css("display", "inherit"); 
+    };
+    //function that sets up view 2
+    var layout2 = function(){
+        $("#view1").css("display", "none");
+        $("#view3").css("display", "none");
+        $("#view2").css("display", "inherit");
+        $("#basicInfoButton").css("display", "none");
+        $("#submit").css("display", "none");
+        $("#surveyButton").css("display", "inherit");
+    };
+    //function to verify that all fields are submitted
+    var verifyAnswer = function(){
+        allFieldsSubmitted = true;
+            if ($("#name").val() === ""){
+                $('#namePlease').modal('toggle');
+                layout1();
+                allFieldsSubmitted = false;
+                return; 
+            }
+            else if ($("#photo").val() === ""){
+                $("#linkPlease").modal("toggle");
+                layout1();
+                allFieldsSubmitted = false;
+                return;
+            }
+            for (i=1 ; i <= 10 ; i++){
+                    if ($("#q"+i+"").val() === ""){
+                        $("#questionPrompt").text("Please answer question " + i + " to see your result!")
+                        $("#questionPlease").modal("toggle");
+                        if (i <6){
+                            layout2();
+                        }
+                        allFieldsSubmitted = false;
+                        return;
+                    }
+            }
+            
+    }
+
+    $("#basicInfoButton").on("click", function(event){
+        //prevent the page from reloading
+        event.preventDefault();
+        //manually toggle the modal (via bootstrap documentation).ADD THIS ADD THIS ADD THIS
+        //$('#checkProfile').modal('toggle')
+        //hide view 1 and the info button & make view 2 and the survey button visible
+        $("#view1").css("display", "none");
+        $("#view2").css("display", "inherit");
+        $("#basicInfoButton").css("display", "none");
+        $("#surveyButton").css("display", "inherit");
+        $("#exampleName").text($("#name").val().trim());
+        $("#exampleImg").attr("src", $("#photo").val().trim());
+        $("#exampleImg").attr("alt", $("#name").val().trim());
+        $("#exampleModal").modal("toggle");
+
+    });
+
+    $("#editProfile").on("click", function(event){
+        //prevent the page from reloading
+        event.preventDefault();
+        //manually toggle the modal (via bootstrap documentation).ADD THIS ADD THIS ADD THIS
+        //$('#checkProfile').modal('toggle')
+        //hide view 1 and the info button & make view 2 and the survey button visible
+        layout1();
+    });
+
+    $("#surveyButton").on("click", function(event){
+        //prevent the page from reloading
+        event.preventDefault();
+        //hide view 2 and the survey button & make view 3 and the submit button visible
+        $("#view2").css("display", "none");
+        $("#view3").css("display", "inherit");
+        $("#surveyButton").css("display", "none");
+        $("#submit").css("display", "inherit");
+    });
+
+    $("#submit").on("click", function(event){
+        //prevent the page from reloading
+        event.preventDefault();
+        verifyAnswer();
+        if (allFieldsSubmitted === false){
+            return;
+        };
+        //construct new object based on user input
+        var newSurvey = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim(),
+            ]
+        }
+    console.log(newSurvey);
+
+    $.post("api/friends", newSurvey, function(data){
+        console.log(data.name + " is your closest match");
+        //clear all form inputs
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+
+        //set the appropriate name/image in the modal based on the ajax response. set the alt id to the matching friend name in case the 
+        //image doesn't display properly.
+        $("#friendMatchName").text(data.name);
+        $("#friendMatchImg").attr("src", data.photo);
+        $("#friendMatchImg").attr("alt", data.name);
+        //manually toggle the modal (via bootstrap documentation).
+        $('#friendMatchModal').modal('toggle')
+        
+    })
+    });
+
+
+
+</script>
