@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>homework #11</title>
 
   <!--links to bootstrap, jquery, and bootstrap.js -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -16,34 +16,36 @@
 <body>
 
   <div class="container">
-
+    <!--page header-->
     <h1 class="text-center"><strong>Friend Finder</strong></h>
     <hr>
+    <!--div that holds the first set of input fields-->
     <div id="view1">
         <h2 class="text-center"><strong>Basic Information </strong> (all fields required)</h2>
             <form class="text-left" id="form1">
                 <div class="form-group">
-                <label for="nameInput">Name: </label>
+                <!--name input-->
+                <label for="nameInput" style="font-size: 24px">Name: </label>
                 <input type="text" class="form-control" id="name" placeholder="Jamie Reaves">
                 </div>
-
+                <!--photo link input-->
                 <div class="form-group">
-                    <label for="nameInput">Link to a Photo Image: </label>
+                    <label for="nameInput" style="font-size: 24px">Link to a Photo Image: </label>
                     <input type="text" class="form-control" id="photo" placeholder="https://example.net/example.jpg">
                 </div>
             </form>
     </div>
 
-    <br>
-<!--Button to view profile and continue-->
-<button type="submit" class="btn btn-primary btn-lg btn-block" id="basicInfoButton">Continue</button>
-
+    <!--Button to view profile, confirm and continue-->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="basicInfoButton">Continue</button>
+    <!--div that holds the first set of survey questions, initially hidden-->
     <div class="text-left" id="view2" style="display: none">
         <h2 class="text-center"><strong>Survey Questions </strong> (part 1 of 2)</h2>
+            <!--form with 5 bootstrap example select inputs to collect user responses-->
             <form id="form2"> 
                 <h4 class=><strong>Question 1</strong></h4>
                 <div class="form-group">
-                <label for="question1">PLACEHOLDER</label>
+                <label for="question1" style="font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control text-center" id="q1">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -54,9 +56,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 2</strong></h3>
+                <h4><strong>Question 2</strong></h4>
                 <div class="form-group">
-                <label for="question2">PLACEHOLDER</label>
+                <label for="question2" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q2">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -67,9 +69,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 3</strong></h3>
+                <h4><strong>Question 3</strong></h4>
                 <div class="form-group">
-                <label for="question3">PLACEHOLDER</label>
+                <label for="question3" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q3">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -80,9 +82,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 4</strong></h3>
+                <h4><strong>Question 4</strong></h4>
                 <div class="form-group">
-                <label for="question4">PLACEHOLDER</label>
+                <label for="question4" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q4">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -93,9 +95,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 5</strong></h3>
+                <h4><strong>Question 5</strong></h4>
                 <div class="form-group">
-                <label for="question5">PLACEHOLDER</label>
+                <label for="question5" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q5">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -108,16 +110,17 @@
             </form>
     </div>
     
-        <br>
 <!--Button to continue survey-->
 <button type="submit" class="btn btn-primary btn-lg btn-block" id="surveyButton" style="display: none">Continue</button>
 
+    <!--div that holds the second set of survey questions, initially hidden-->
     <div class="text-left" id="view3" style="display: none">
         <h2 class="text-center"><strong>Survey Questions </strong> (part 2 of 2)</h2>
+        <!--form with 5 bootstrap example select inputs to collect user responses-->
             <form id="form3">
-                <h3><strong>Question 6</strong></h3>
+                <h4><strong>Question 6</strong></h4>
                 <div class="form-group">
-                <label for="question6">PLACEHOLDER</label>
+                <label for="question6" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q6">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -128,9 +131,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 7</strong></h3>
+                <h4><strong>Question 7</strong></h4>
                 <div class="form-group">
-                <label for="question7">PLACEHOLDER</label>
+                <label for="question7" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q7">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -141,9 +144,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 8</strong></h3>
+                <h4><strong>Question 8</strong></h4>
                 <div class="form-group">
-                <label for="question8">PLACEHOLDER</label>
+                <label for="question8" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q8">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -154,9 +157,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 9</strong></h3>
+                <h4><strong>Question 9</strong></h4>
                 <div class="form-group">
-                <label for="question9">PLACEHOLDER</label>
+                <label for="question9" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q9">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -167,9 +170,9 @@
                 </select>
                 </div>
                 
-                <h3><strong>Question 10</strong></h3>
+                <h4><strong>Question 10</strong></h4>
                 <div class="form-group">
-                <label for="question10">PLACEHOLDER</label>
+                <label for="question10" style= "font-size: 18px">PLACEHOLDER</label>
                 <select class="form-control" id="q10">
                     <option value="">Please Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -184,7 +187,6 @@
             </form>
     </div>   
     
-    <br>
     <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" style="display: none">Submit</button>
 
@@ -192,7 +194,7 @@
     <!--footer containing link to the API Friends List & the github repository for the app-->
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jamiereaves/FriendFinder">GitHub Repo</a></p>
+        <p style= "font-size: 18px"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jamiereaves/FriendFinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -282,13 +284,10 @@
         </div>
       </div>
 
-  <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+  <!--javascript for this page-->
 <script type="text/javascript">
 
-    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    //store boolean response to establish if all fields have been entered by the user
     var allFieldsSubmitted = "";
     //function that sets up initial display
     var layout1 = function(){
@@ -310,19 +309,27 @@
     };
     //function to verify that all fields are submitted
     var verifyAnswer = function(){
+        //prevent previous failures from preventing future successes
         allFieldsSubmitted = true;
+            //check that the name was entered. if not, trigger modal to prompt user to fix the problem.
+            //restore initial page view and change boolean to false (to prevent sending an incomplete JSON object).
             if ($("#name").val() === ""){
                 $('#namePlease').modal('toggle');
                 layout1();
                 allFieldsSubmitted = false;
                 return; 
             }
+            //check that the photo link was entered. if not, trigger modal to prompt user to fix the problem.
+            //restore initial page view and change boolean to false (to prevent sending an incomplete JSON object).
             else if ($("#photo").val() === ""){
                 $("#linkPlease").modal("toggle");
                 layout1();
                 allFieldsSubmitted = false;
                 return;
             }
+            //check that all questions were answered. if not, trigger modal to prompt user to fix the problem.
+            //restore appropriate page view (if necessary, i.e. if the unanswered question was between 1 & 5) and change 
+            //boolean to false (to prevent sending an incomplete JSON object).
             for (i=1 ; i <= 10 ; i++){
                     if ($("#q"+i+"").val() === ""){
                         $("#questionPrompt").text("Please answer question " + i + " to see your result!")
@@ -336,33 +343,26 @@
             }
             
     }
-
+    //click event for button that submits name/photo info
     $("#basicInfoButton").on("click", function(event){
         //prevent the page from reloading
         event.preventDefault();
-        //manually toggle the modal (via bootstrap documentation).ADD THIS ADD THIS ADD THIS
-        //$('#checkProfile').modal('toggle')
-        //hide view 1 and the info button & make view 2 and the survey button visible
-        $("#view1").css("display", "none");
-        $("#view2").css("display", "inherit");
-        $("#basicInfoButton").css("display", "none");
-        $("#surveyButton").css("display", "inherit");
+        //call layout2 function to set up the proper display. set name/img info for example modal and trigger said modal.
+       layout2();
         $("#exampleName").text($("#name").val().trim());
         $("#exampleImg").attr("src", $("#photo").val().trim());
         $("#exampleImg").attr("alt", $("#name").val().trim());
         $("#exampleModal").modal("toggle");
 
     });
-
+    //click event for button on exampleModal that allows user to edit name/photo link
     $("#editProfile").on("click", function(event){
         //prevent the page from reloading
         event.preventDefault();
-        //manually toggle the modal (via bootstrap documentation).ADD THIS ADD THIS ADD THIS
-        //$('#checkProfile').modal('toggle')
-        //hide view 1 and the info button & make view 2 and the survey button visible
+        //call layout1 function that returns to initial display
         layout1();
     });
-
+    //click event for button that displays the second half of the survey
     $("#surveyButton").on("click", function(event){
         //prevent the page from reloading
         event.preventDefault();
@@ -372,11 +372,19 @@
         $("#surveyButton").css("display", "none");
         $("#submit").css("display", "inherit");
     });
-
+    //click event for the submission button
+    // THIS ADAPTED FROM COMMENTS FROM A CLASS EXERCISE, BUT DESCRIBES THE FOLLOWING PROCESS CLEARER THAN I COULD HAVE:
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // When the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/friends)... and then runs the associated code (found in apiRoutes.js).
+    // In this case the associated code "saves" the data to the friends.js file
     $("#submit").on("click", function(event){
         //prevent the page from reloading
         event.preventDefault();
+        //call verifyAnswer function to make sure all fields have been entered by the user
         verifyAnswer();
+        //if a field has not been filled out, exit the function to prevent a server request with an
+        //incomplete object
         if (allFieldsSubmitted === false){
             return;
         };
@@ -397,10 +405,7 @@
                 $("#q10").val().trim(),
             ]
         }
-    console.log(newSurvey);
-
     $.post("api/friends", newSurvey, function(data){
-        console.log(data.name + " is your closest match");
         //clear all form inputs
         $("#name").val("");
         $("#photo").val("");
